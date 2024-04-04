@@ -1,0 +1,17 @@
+.iconActive {
+  fill-opacity: 1;
+}
+
+.iconInactive {
+  fill-opacity: 0;
+}
+
+.iconWide {
+  height: 2rem;
+  width: 4rem;
+}
+
+.iconRegular {
+  height: 2rem;
+  width: 2rem;
+}

@@ -1,0 +1,50 @@
+@font-face {
+  font-family: Calypso;
+  src: url("./fonts/Calypso.ttf");
+}
+
+h1 {
+  font-family: "Calypso", "sans-serif";
+  font-weight: 100;
+  color: #fff;
+  font-size: 4rem;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Calypso", "sans-serif";
+  font-weight: 100;
+  color: #fff;
+  font-size: 3rem;
+  margin: 0 0 3rem 0;
+  text-align: center;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow-x: hidden;
+}
+
+html {
+  scrollbar-color: #2c2c2c transparent;
+  scrollbar-width: thin;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fcf5a2 !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+}
+
+.swiper-pagination {
+  bottom: 30px;
+}
+
+.swiper-wrapper {
+  margin-bottom: 3rem;
+}

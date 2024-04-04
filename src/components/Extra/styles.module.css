@@ -1,0 +1,12 @@
+.extraWrapper {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto 10rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.extraWrapper > *:nth-child(3n) {
+  grid-column: span 2;
+}

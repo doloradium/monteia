@@ -1,0 +1,46 @@
+.mainWrapper {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto 10rem;
+  height: 100vh;
+}
+
+.heroContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  margin: auto;
+  max-width: 1140px;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.heroParagraph {
+  color: #fff;
+  font-size: 1.4rem;
+  max-width: 40%;
+  margin: 0;
+}
+
+.heroScroll {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  bottom: 2rem;
+}
+
+.image {
+  height: 280%;
+  position: absolute;
+  top: -85%;
+  right: 0;
+  z-index: -1;
+}

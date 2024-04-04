@@ -1,0 +1,7 @@
+.cardContainer {
+  display: flex;
+  gap: 2rem;
+  margin: 0 auto 10rem;
+  width: 100%;
+  max-width: 1140px;
+}
