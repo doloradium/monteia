@@ -1,7 +1,14 @@
-.wrapper {
+.cardContainer {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto 10rem;
-  position: relative;
-  z-index: 0;
+  padding: 0 2rem;
+  display: flex;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 710px) {
+  .cardContainer {
+    width: 100%;
+  }
 }

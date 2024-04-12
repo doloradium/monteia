@@ -10,7 +10,7 @@ const Main = () => {
       <div className={styles.mainWrapper}>
         <div className={styles.heroContainer}>
           <div className={styles.heroText}>
-            <h1>Верь в своё будущее</h1>
+            <h1 className={styles.heroHeading}>Верь в своё будущее</h1>
             <p className={styles.heroParagraph}>
               Monteia - это сервис для гаданий, нумерологии и гороскопов
             </p>

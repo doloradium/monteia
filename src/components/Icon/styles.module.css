@@ -12,6 +12,19 @@
 }
 
 .iconRegular {
-  height: 2rem;
-  width: 2rem;
+  height: 2.2rem;
+  height: 2.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .scalable {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .iconWide {
+    display: none;
+  }
 }

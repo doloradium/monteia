@@ -3,6 +3,10 @@
   src: url("./fonts/Calypso.ttf");
 }
 
+* {
+  box-sizing: border-box;
+}
+
 h1 {
   font-family: "Calypso", "sans-serif";
   font-weight: 100;
@@ -18,6 +22,7 @@ h2 {
   font-size: 3rem;
   margin: 0 0 3rem 0;
   text-align: center;
+  padding: 0 2rem;
 }
 
 body {
@@ -25,6 +30,7 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -47,4 +53,22 @@ html {
 
 .swiper-wrapper {
   margin-bottom: 3rem;
+}
+
+.swiper {
+  z-index: 0;
+}
+
+@media screen and (max-width: 710px) {
+  .swiper {
+    overflow: visible;
+  }
+
+  .swiper-wrapper {
+    width: 80vw;
+  }
+
+  h2 {
+    font-size: 10vw;
+  }
 }

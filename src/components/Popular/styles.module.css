@@ -4,4 +4,7 @@
   margin: 0 auto 10rem;
   width: 100%;
   max-width: 1140px;
+  position: relative;
+  overflow: hidden;
+  padding: 0 2rem;
 }

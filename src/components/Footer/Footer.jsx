@@ -1,5 +1,4 @@
 import React from "react";
-import SmokeElement from "smoke-effect-react";
 
 import styles from "./styles.module.css";
 

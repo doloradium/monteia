@@ -1,20 +1,20 @@
 header {
-  width: 100%;
   position: sticky;
   top: 0;
   z-index: 1;
   backdrop-filter: blur(10px);
   background: #11111177;
   border-bottom: 1px solid #2c2c2c;
+  width: 100%;
 }
 
 .headerContainer {
   display: flex;
-  width: 100%;
   justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
   max-width: 1140px;
   margin: auto;
-  padding: 2rem 0;
 }
 
 .logo {
@@ -31,6 +31,7 @@ header {
   display: flex;
   gap: 5rem;
   margin: auto;
+  padding: 0;
 }
 
 .navbarItem {
@@ -50,4 +51,19 @@ header {
 
 .navbarLink:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    border-bottom: none;
+    position: absolute;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .profileIcon {
+    display: none;
+  }
 }

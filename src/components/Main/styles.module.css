@@ -1,8 +1,9 @@
 .mainWrapper {
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto 10rem;
   height: 100vh;
+  width: 100%;
+  margin: auto;
+  padding: 0 2rem;
+  max-width: 1140px;
 }
 
 .heroContainer {
@@ -11,7 +12,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  margin: auto;
+  padding: 0 2rem;
   max-width: 1140px;
 }
 
@@ -24,7 +25,7 @@
 .heroParagraph {
   color: #fff;
   font-size: 1.4rem;
-  max-width: 40%;
+  max-width: 430px;
   margin: 0;
 }
 
@@ -43,4 +44,28 @@
   top: -85%;
   right: 0;
   z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .image {
+    display: none;
+  }
+
+  .mainWrapper {
+    margin-bottom: 10rem;
+  }
+
+  .heroScroll {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .heroHeading {
+    font-size: 12vw;
+  }
+
+  .heroParagraph {
+    font-size: 5vw;
+  }
 }

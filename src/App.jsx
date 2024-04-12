@@ -5,6 +5,7 @@ import Extra from "./components/Extra/Extra";
 import ReviewList from "./components/ReviewList/ReviewList";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
+import MobileNavbar from "./components/MobileNavbar/MobileNavbar";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Extra />
       <ReviewList />
       <Footer />
+      <MobileNavbar />
     </>
   );
 }

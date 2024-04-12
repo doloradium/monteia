@@ -7,11 +7,11 @@ const Review = () => {
   return (
     <div className={styles.cardContainer}>
       <div className={styles.upperBlock}>
-        <Icon type={"star"} />
-        <Icon type={"star"} />
-        <Icon type={"star"} />
-        <Icon type={"star"} />
-        <Icon type={"star"} status={0} />
+        <Icon color={"golden"} type={"star"} />
+        <Icon color={"golden"} type={"star"} />
+        <Icon color={"golden"} type={"star"} />
+        <Icon color={"golden"} type={"star"} />
+        <Icon color={"golden"} type={"star"} status={0} />
       </div>
       <div className={styles.infoBlock}>
         <h3 className={styles.cardHeading}>Server Error</h3>

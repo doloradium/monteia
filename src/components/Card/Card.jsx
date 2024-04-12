@@ -4,11 +4,13 @@ import { Icon } from "../Icon/Icon";
 import styles from "./styles.module.css";
 import Button from "../Button/Button";
 
+console.log(<Icon />);
+
 const Card = () => {
   return (
     <div className={styles.cardContainer}>
       <div className={styles.upperBlock}>
-        <Icon type={"heart"} />
+        <Icon color={"golden"} type={"heart"} className={styles.cardImage} />
         <p className={styles.tag}>нумерология</p>
       </div>
       <div className={styles.infoBlock}>
@@ -19,8 +21,13 @@ const Card = () => {
         </p>
       </div>
       <div className={styles.controlsBlock}>
-        <Button content={"перейти"} icon={"arrowSmall"} iconWidth={"wide"} />
-        <Button opacity={0} icon={"heart"} />
+        <Button
+          buttonWidth={"fill"}
+          content={"перейти"}
+          icon={"arrowSmall"}
+          iconWidth={"wide"}
+        />
+        <Button iconColor={"golden"} opacity={0} icon={"heart"} />
       </div>
     </div>
   );

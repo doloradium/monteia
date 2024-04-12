@@ -27,7 +27,12 @@ const Header = () => {
             </a>
           </li>
         </ul>
-        <Button icon={"profile"} opacity={0} />
+        <Button
+          iconColor={"golden"}
+          className={styles.profileIcon}
+          icon={"profile"}
+          opacity={0}
+        />
       </div>
     </header>
   );
