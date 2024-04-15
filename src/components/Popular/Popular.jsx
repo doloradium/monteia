@@ -14,6 +14,7 @@ const Popular = () => {
       <h2>Популярные гадания</h2>
       <div className={styles.cardContainer}>
         <Card />
+        <Card />
         {/* <Swiper
           slidesPerView={3}
           spaceBetween={"35rem"}

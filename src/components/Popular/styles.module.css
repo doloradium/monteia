@@ -15,3 +15,7 @@
     margin-bottom: 40vw;
   }
 } */
+
+.cardContainer {
+  display: flex;
+}
