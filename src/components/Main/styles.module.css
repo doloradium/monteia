@@ -66,11 +66,11 @@
 
 @media screen and (max-width: 576px) {
   .mainWrapper {
-    padding: 0 1rem;
+    padding: 0 8vw;
   }
 
   .heroContainer {
-    padding: 0 1rem;
+    padding: 0 8vw;
   }
 }
 
