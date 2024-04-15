@@ -40,8 +40,18 @@ button:hover {
 
 @media screen and (max-width: 420px) {
   .buttonBig {
-    padding: 0.75rem 2rem;
+    padding: 2.5vw 8vw;
     font-size: 5vw;
     gap: 1.5rem;
+  }
+
+  .button {
+    font-size: 4vw;
+    height: 10vw;
+  }
+
+  .buttonFill {
+    font-size: 4vw;
+    height: 10vw;
   }
 }

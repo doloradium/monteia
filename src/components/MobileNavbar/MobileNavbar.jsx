@@ -26,7 +26,7 @@ const MobileNavbar = () => {
         <Button
           iconColor={"golden"}
           className={styles.profileIcon}
-          icon={"star"}
+          icon={"magic"}
           opacity={0}
           iconStatus={0}
           iconScalable={1}

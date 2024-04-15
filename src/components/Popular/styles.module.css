@@ -8,3 +8,10 @@
   overflow: hidden;
   padding: 0 2rem;
 }
+
+@media screen and (max-width: 420px) {
+  .cardContainer {
+    padding: 0;
+    margin-bottom: 40vw;
+  }
+}

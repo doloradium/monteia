@@ -1,7 +1,7 @@
 footer {
   width: 100%;
   max-width: 1140px;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
   padding: 0 2rem;
 }
 
@@ -64,5 +64,29 @@ footer {
   .footerContainer {
     width: 100%;
     row-gap: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  footer {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .logo {
+    font-size: 7vw;
+  }
+
+  .footerLink {
+    font-size: 4vw;
+  }
+
+  .footerParagraph {
+    font-size: 4vw;
+  }
+
+  .footerItem {
+    margin-bottom: 4vw;
   }
 }

@@ -72,3 +72,9 @@ html {
     font-size: 10vw;
   }
 }
+
+@media screen and (max-width: 420px) {
+  h2 {
+    padding: 0 4vw;
+  }
+}

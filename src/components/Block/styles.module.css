@@ -45,3 +45,19 @@
     transform: translate(30%, -40%);
   }
 }
+
+@media screen and (max-width: 420px) {
+  .blockParagraph {
+    font-size: 4vw;
+  }
+
+  .blockHeading {
+    font-size: 6vw;
+    margin-bottom: 4vw;
+  }
+
+  .wrapper {
+    padding: 8vw;
+    gap: 8vw;
+  }
+}

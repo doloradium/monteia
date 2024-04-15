@@ -14,6 +14,8 @@
 
 .infoBlock {
   display: flex;
+  gap: 1rem;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -32,4 +34,23 @@
 .cardParagraph {
   color: #b3b3b3;
   margin: 0;
+}
+
+@media screen and (max-width: 420px) {
+  .cardHeading {
+    font-size: 6vw;
+  }
+
+  .upperBlock {
+    gap: 4vw;
+  }
+
+  .cardParagraph {
+    font-size: 4vw;
+  }
+
+  .cardContainer {
+    padding: 8vw;
+    gap: 8vw;
+  }
 }

@@ -27,3 +27,9 @@ nav {
     padding: 1rem;
   }
 }
+
+@media screen and (max-width: 420px) {
+  .navbarContainer {
+    padding: 4vw;
+  }
+}

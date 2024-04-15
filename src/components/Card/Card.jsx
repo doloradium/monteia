@@ -3,14 +3,13 @@ import React from "react";
 import { Icon } from "../Icon/Icon";
 import styles from "./styles.module.css";
 import Button from "../Button/Button";
-
-console.log(<Icon />);
+import cardImage from "../../assets/cardImage.svg";
 
 const Card = () => {
   return (
     <div className={styles.cardContainer}>
       <div className={styles.upperBlock}>
-        <Icon color={"golden"} type={"heart"} className={styles.cardImage} />
+        <img className={styles.cardImage} src={cardImage} alt="" />
         <p className={styles.tag}>нумерология</p>
       </div>
       <div className={styles.infoBlock}>

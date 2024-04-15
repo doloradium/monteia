@@ -44,7 +44,7 @@ export const iconsDefs = {
     ),
   },
   mouse: {
-    viewBox: "0 -1 25 42",
+    viewBox: "-1 -1 27 42",
     body: (
       <>
         <rect

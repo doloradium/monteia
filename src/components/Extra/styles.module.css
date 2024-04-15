@@ -21,3 +21,21 @@
     grid-column: span 1;
   }
 }
+
+@media screen and (max-width: 710px) {
+  .extraWrapper {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .extraWrapper {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .extraWrapper {
+    margin: 0 auto 40vw;
+  }
+}

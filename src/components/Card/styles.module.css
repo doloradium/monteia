@@ -7,10 +7,15 @@
   gap: 2rem;
 }
 
+.cardImage {
+  width: 25%;
+}
+
 .upperBlock {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .tag {
@@ -38,4 +43,28 @@
 .cardParagraph {
   color: #b3b3b3;
   margin: 0;
+}
+
+@media screen and (max-width: 420px) {
+  .cardContainer {
+    padding: 8vw;
+    gap: 8vw;
+  }
+
+  .controlsBlock {
+    gap: 8vw;
+  }
+
+  .tag {
+    font-size: 4vw;
+    padding: 2vw 4vw;
+  }
+
+  .cardHeading {
+    font-size: 6vw;
+  }
+
+  .cardParagraph {
+    font-size: 4vw;
+  }
 }

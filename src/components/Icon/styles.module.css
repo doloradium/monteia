@@ -27,4 +27,14 @@
   .iconWide {
     display: none;
   }
+
+  .iconRegular {
+    height: 10vw;
+    width: 10vw;
+  }
+
+  .scalable {
+    height: 7vw;
+    width: 7vw;
+  }
 }

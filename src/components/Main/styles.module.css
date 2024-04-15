@@ -55,8 +55,22 @@
     margin-bottom: 10rem;
   }
 
+  .heroContainer {
+    transform: translate(-50%, calc(-50% - 2rem));
+  }
+
   .heroScroll {
-    display: none;
+    bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .mainWrapper {
+    padding: 0 1rem;
+  }
+
+  .heroContainer {
+    padding: 0 1rem;
   }
 }
 
@@ -65,7 +79,19 @@
     font-size: 12vw;
   }
 
+  .scrollParagraph {
+    font-size: 4vw;
+  }
+
   .heroParagraph {
     font-size: 5vw;
+  }
+
+  .mainWrapper {
+    margin-bottom: 40vw;
+  }
+
+  .heroScroll {
+    bottom: 4.5rem;
   }
 }

@@ -24,7 +24,7 @@ const Main = () => {
           <img className={styles.image} src={heroImage} alt="Aroma Stick" />
         </div>
         <div className={styles.heroScroll}>
-          <Icon type={"mouse"} status={0} width={"regular"} />
+          <Icon scalable={1} type={"mouse"} status={0} width={"regular"} />
           <p className={styles.scrollParagraph}>листайте ниже</p>
         </div>
       </div>

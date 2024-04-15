@@ -67,3 +67,15 @@ header {
     display: none;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .headerContainer {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .logo {
+    font-size: 7vw;
+  }
+}
