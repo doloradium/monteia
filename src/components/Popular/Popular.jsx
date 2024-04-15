@@ -13,7 +13,8 @@ const Popular = () => {
     <>
       <h2>Популярные гадания</h2>
       <div className={styles.cardContainer}>
-        <Swiper
+        <Card />
+        {/* <Swiper
           slidesPerView={3}
           spaceBetween={"35rem"}
           modules={[Pagination]}
@@ -42,7 +43,7 @@ const Popular = () => {
           <SwiperSlide>
             <Card />
           </SwiperSlide>
-        </Swiper>
+        </Swiper> */}
       </div>
     </>
   );
