@@ -25,12 +25,7 @@
 @media screen and (max-width: 710px) {
   .extraWrapper {
     gap: 1rem;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .extraWrapper {
-    padding: 8vw;
+    padding: 0 1rem;
   }
 }
 

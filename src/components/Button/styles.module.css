@@ -42,16 +42,20 @@ button:hover {
   .buttonBig {
     padding: 2.5vw 8vw;
     font-size: 5vw;
-    gap: 1.5rem;
+    gap: 6vw;
   }
 
   .button {
     font-size: 4vw;
     height: 10vw;
+    padding: 0 6vw;
+    gap: 6vw;
   }
 
   .buttonFill {
     font-size: 4vw;
     height: 10vw;
+    padding: 0 6vw;
+    gap: 6vw;
   }
 }
