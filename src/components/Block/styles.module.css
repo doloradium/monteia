@@ -40,6 +40,14 @@
     margin-right: 0;
   }
 
+  .blockParagraph {
+    font-size: 1rem;
+  }
+
+  .blockHeading {
+    font-size: 1.5rem;
+  }
+
   .blockImage {
     height: 30%;
     top: 0;
