@@ -1,4 +1,4 @@
-/* .cardContainer {
+.cardContainer {
   display: flex;
   gap: 2rem;
   margin: 0 auto 10rem;
@@ -14,9 +14,4 @@
     padding: 0;
     margin-bottom: 40vw;
   }
-} */
-
-.cardContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
