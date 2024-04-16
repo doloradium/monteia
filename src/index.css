@@ -1,14 +1,10 @@
-/* @font-face {
+@font-face {
   font-family: Calypso;
   src: url("./fonts/Calypso.ttf");
 }
 
 * {
   box-sizing: border-box;
-}
-
-p {
-  font-size: 16px !important;
 }
 
 h1 {
@@ -39,6 +35,7 @@ body {
 }
 
 html {
+  -webkit-text-size-adjust: 100%;
   scrollbar-color: #2c2c2c transparent;
   scrollbar-width: thin;
 }
@@ -81,10 +78,4 @@ html {
   h2 {
     padding: 0 4vw;
   }
-} */
-
-
-html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
 }

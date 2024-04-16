@@ -11,20 +11,18 @@
 }
 
 .blockInfo {
-  /* display: flex;
-  flex-direction: column; */
-  margin-right: 7em;
+  margin-right: 7rem;
 }
 
 .blockParagraph {
   margin: 0;
   color: #b3b3b3;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .blockHeading {
   margin: 0 0 1rem 0;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #fff;
 }
@@ -42,14 +40,6 @@
     margin-right: 0;
   }
 
-  .blockParagraph {
-    font-size: 16px;
-  }
-
-  .blockHeading {
-    font-size: 1.5em;
-  }
-
   .blockImage {
     height: 30%;
     top: 0;
@@ -59,7 +49,7 @@
 
 @media screen and (max-width: 420px) {
   .blockParagraph {
-    font-size: 16px;
+    font-size: 4vw;
   }
 
   .blockHeading {
