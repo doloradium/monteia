@@ -5,6 +5,8 @@ import styles from "./styles.module.css";
 import "swiper/css";
 import "swiper/css/pagination";
 
+import cardArray from "../../data/cardArray";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 
@@ -19,6 +21,7 @@ const Popular = () => {
           modules={[Pagination]}
           pagination={{ clickable: true }}
           initialSlide={1}
+          style={{ height: "100%" }}
           breakpoints={{
             0: {
               slidesPerView: 1,
@@ -33,15 +36,18 @@ const Popular = () => {
             },
           }}
         >
-          <SwiperSlide>
-            <Card />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card />
-          </SwiperSlide>
+          {cardArray.slice(0, 3).map((item, key) => (
+            <SwiperSlide key={key}>
+              <Card
+                id={item.id}
+                name={item.name}
+                description={item.description}
+                type={item.type}
+                image={item.image}
+                isLiked={item.isLiked}
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </>

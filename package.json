@@ -10,13 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@tsparticles/engine": "^3.3.0",
-    "@tsparticles/react": "^3.0.0",
-    "@tsparticles/slim": "^3.3.0",
+    "@pixi/react": "^7.1.2",
     "clsx": "^2.1.0",
+    "phaser": "^3.80.1",
+    "pixi.js": "^8.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "smoke-effect-react": "^1.0.5",
     "swiper": "^11.1.0"
   },
   "devDependencies": {

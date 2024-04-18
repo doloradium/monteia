@@ -8,6 +8,8 @@
   align-items: center;
   height: min-content;
   position: relative;
+  backdrop-filter: blur(10px);
+  background: #11111177;
 }
 
 .blockInfo {

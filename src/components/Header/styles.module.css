@@ -56,7 +56,9 @@ header {
 @media screen and (max-width: 768px) {
   header {
     border-bottom: none;
-    position: absolute;
+    position: static;
+    backdrop-filter: blur(0);
+    background: none;
   }
 
   .navbar {

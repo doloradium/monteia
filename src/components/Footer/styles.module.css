@@ -3,6 +3,8 @@ footer {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 2rem;
+  flex-shrink: 0;
+  position: relative;
 }
 
 .logo {

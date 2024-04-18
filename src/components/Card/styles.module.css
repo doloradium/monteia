@@ -4,11 +4,16 @@
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: min(2rem);
+  justify-content: space-between;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  background: #11111177;
 }
 
 .cardImage {
   width: 25%;
+  max-width: 70px;
 }
 
 .upperBlock {

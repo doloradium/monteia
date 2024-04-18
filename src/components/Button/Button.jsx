@@ -5,6 +5,7 @@ import { Icon } from "../Icon/Icon";
 import styles from "./styles.module.css";
 
 const Button = ({
+  type,
   iconColor,
   id,
   className,
@@ -16,19 +17,19 @@ const Button = ({
   iconStatus,
   buttonWidth,
   iconScalable,
+  onClick,
 }) => {
   const [status, setStatus] = useState(iconStatus);
 
-  const handleClick = () => {
-    if (opacity == 0 && iconStatus == null) {
-      status == 0 ? setStatus(1) : setStatus(0);
-    }
-  };
+  useEffect(() => {
+    setStatus(iconStatus);
+  }, [iconStatus]);
 
   return (
     <>
       <button
-        onClick={handleClick}
+        type={type}
+        onClick={onClick}
         id={id}
         className={clsx(
           className,

@@ -3,18 +3,21 @@ import React from "react";
 import styles from "./styles.module.css";
 import Block from "../Block/Block";
 
-import scorpio from "../../assets/scorpio.svg";
-import digit from "../../assets/digit.svg";
-import quotes from "../../assets/quotes.svg";
+import extraArray from "../../data/extraArray";
 
 const Extra = () => {
   return (
     <>
       <h2>Дополнительно</h2>
       <div className={styles.extraWrapper}>
-        <Block image={scorpio} />
-        <Block image={digit} />
-        <Block image={quotes} />
+        {extraArray.map((item) => (
+          <Block
+            key={item.id}
+            heading={item.heading}
+            text={item.text}
+            image={item.image}
+          />
+        ))}
       </div>
     </>
   );

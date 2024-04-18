@@ -6,6 +6,8 @@ import "swiper/css/pagination";
 
 import Review from "../Review/Review";
 
+import reviewArray from "../../data/reviewArray";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 
@@ -20,6 +22,7 @@ const ReviewList = () => {
           modules={[Pagination]}
           pagination={{ clickable: true }}
           initialSlide={1}
+          style={{ height: "100%" }}
           breakpoints={{
             0: {
               slidesPerView: 1,
@@ -33,21 +36,17 @@ const ReviewList = () => {
             },
           }}
         >
-          <SwiperSlide>
-            <Review />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Review />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Review />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Review />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Review />
-          </SwiperSlide>
+          {reviewArray.slice(0, 5).map((item, key) => (
+            <SwiperSlide key={key}>
+              <Review
+                id={item.id}
+                stars={item.stars}
+                name={item.name}
+                text={item.text}
+                date={item.date}
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </>

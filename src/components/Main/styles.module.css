@@ -1,3 +1,16 @@
+.mainContainer {
+  margin-bottom: 10rem;
+}
+
+.mainBackground {
+  background-color: #111111;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: relative;
+  margin-top: -6.2rem;
+}
+
 .mainWrapper {
   height: 100vh;
   width: 100%;
@@ -46,8 +59,23 @@
   z-index: -1;
 }
 
+.mainGradient {
+  height: 1000px;
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(#111111, #11111100);
+}
+
 @media screen and (max-width: 768px) {
   .image {
+    display: none;
+  }
+
+  .mainBackground {
+    background-color: #11111100;
+  }
+
+  .mainGradient {
     display: none;
   }
 
