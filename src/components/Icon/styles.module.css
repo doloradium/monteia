@@ -1,0 +1,41 @@
+.iconActive {
+  fill-opacity: 1;
+}
+
+.iconInactive {
+  fill-opacity: 0;
+}
+
+.iconWide {
+  height: 2rem;
+  width: 4rem;
+}
+
+.iconRegular {
+  height: 2.2rem;
+  height: 2.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .scalable {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .iconWide {
+    height: 8vw;
+    width: 12vw;
+  }
+
+  .iconRegular {
+    height: 10vw;
+    width: 10vw;
+  }
+
+  .scalable {
+    height: 7vw;
+    width: 7vw;
+  }
+}
