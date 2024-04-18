@@ -1,0 +1,35 @@
+nav {
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  background: #11111177;
+  border-top: 1px solid #2c2c2c;
+  width: 100%;
+  display: none;
+}
+
+.navbarContainer {
+  width: 100%;
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: block;
+  }
+
+  .navbarContainer {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .navbarContainer {
+    padding: 4vw;
+  }
+}

@@ -1,0 +1,48 @@
+.cardContainer {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto 10rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 0 2rem;
+}
+
+.cardContainer > *:nth-child(n) {
+  grid-column: span 3;
+}
+
+.cardContainer > *:nth-child(5n - 2) {
+  grid-column: span 2;
+}
+
+.cardContainer > *:nth-child(5n - 1) {
+  grid-column: span 2;
+}
+
+.cardContainer > *:nth-child(5n) {
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 1120px) {
+  .cardContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cardContainer > *:nth-child(n) {
+    grid-column: span 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cardContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .cardContainer {
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+}
