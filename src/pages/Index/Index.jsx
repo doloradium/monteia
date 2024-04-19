@@ -11,7 +11,7 @@ const Index = () => {
   return (
     <div className={styles.page}>
       <div className={styles.content}>
-        <Header />
+        {/* <Header /> */}
         <Main />
         <Popular />
         <Extra />
