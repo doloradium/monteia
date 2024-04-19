@@ -1,9 +1,17 @@
-.mainWrapper {
+.mainBackground {
+  width: 100vw;
   height: 100vh;
-  width: 100%;
+  background-color: #111111;
+  position: relative;
+  overflow: hidden;
+}
+
+.mainWrapper {
   margin: auto;
   padding: 0 2rem;
   max-width: 1140px;
+  width: 100%;
+  height: 100%;
 }
 
 .heroContainer {
