@@ -8,8 +8,8 @@
   left: -50vmax;
   width: 200vmax;
   height: 200vmax;
-  animation: 300s linear 0s normal none infinite running rotation;
-  -webkit-animation: 400s linear 0s normal none infinite running rotation;
+  animation: 200s linear 0s normal none infinite running rotation;
+  -webkit-animation: 200s linear 0s normal none infinite running rotation;
 }
 
 .backgroundImage:last-child {
