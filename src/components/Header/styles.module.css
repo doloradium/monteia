@@ -56,7 +56,7 @@ header {
 @media screen and (max-width: 768px) {
   header {
     border-bottom: none;
-    position: static;
+    position: absolute;
     backdrop-filter: blur(0);
     background: none;
   }
