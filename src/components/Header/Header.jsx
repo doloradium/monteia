@@ -1,30 +1,32 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import Button from "../Button/Button";
+
 import styles from "./styles.module.css";
 
 const Header = () => {
   return (
     <header>
       <div className={styles.headerContainer}>
-        <a className={styles.logo} href={`/`}>
+        <Link className={styles.logo} to={`/`}>
           MONTEIA
-        </a>
+        </Link>
         <ul className={styles.navbar}>
           <li className={styles.navbarItem}>
-            <a className={styles.navbarLink} href="#">
+            <Link className={styles.navbarLink} to={`/`}>
               главная
-            </a>
+            </Link>
           </li>
           <li className={styles.navbarItem}>
-            <a className={styles.navbarLink} href="#">
+            <Link className={styles.navbarLink} to={`/`}>
               дневник
-            </a>
+            </Link>
           </li>
           <li className={styles.navbarItem}>
-            <a className={styles.navbarLink} href={`/predictions`}>
+            <Link className={styles.navbarLink} to={`/predictions`}>
               гадания
-            </a>
+            </Link>
           </li>
         </ul>
         <Button

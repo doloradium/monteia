@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import styles from "./styles.module.css";
 
@@ -9,9 +10,9 @@ const Footer = () => {
         <div className={styles.footerContainer}>
           <ul className={styles.footerBlock}>
             <li className={styles.footerItem}>
-              <a className={styles.logo} href={`/`}>
+              <Link className={styles.logo} to={`/`}>
                 MONTEIA
-              </a>
+              </Link>
             </li>
             <li className={styles.footerItem}>
               <p className={styles.footerParagraph}>“Верь в своё будущее”</p>
@@ -24,43 +25,43 @@ const Footer = () => {
         <div className={styles.footerContainer}>
           <ul className={styles.footerBlock}>
             <li className={styles.footerItem}>
-              <a href="#" className={styles.footerLink}>
+              <Link to={`/`} className={styles.footerLink}>
                 Настройки
-              </a>
+              </Link>
             </li>
             <li className={styles.footerItem}>
-              <a href="#" className={styles.footerLink}>
+              <Link to={`/`} className={styles.footerLink}>
                 Профиль
-              </a>
+              </Link>
             </li>
             <li className={styles.footerItem}>
-              <a href="#" className={styles.footerLink}>
+              <Link to={`/`} className={styles.footerLink}>
                 Дневник
-              </a>
+              </Link>
             </li>
           </ul>
           <ul className={styles.footerBlock}>
             <li className={styles.footerItem}>
-              <a href="#" className={styles.footerLink}>
+              <Link to={`/`} className={styles.footerLink}>
                 Главная
-              </a>
+              </Link>
             </li>
             <li className={styles.footerItem}>
-              <a href={`/predictions`} className={styles.footerLink}>
+              <Link to={`/predictions`} className={styles.footerLink}>
                 Список гаданий
-              </a>
+              </Link>
             </li>
           </ul>
           <ul className={styles.footerBlock}>
             <li className={styles.footerItem}>
-              <a href="#" className={styles.footerLink}>
+              <Link to="#" className={styles.footerLink}>
                 Пользовательское соглашение
-              </a>
+              </Link>
             </li>
             <li className={styles.footerItem}>
-              <a href="#" className={styles.footerLink}>
+              <Link to="#" className={styles.footerLink}>
                 Политика конфиденциальности
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
