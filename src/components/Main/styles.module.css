@@ -5,6 +5,7 @@
   background-color: #111111;
   position: relative;
   overflow: hidden;
+  transition: 0.2s;
 }
 
 .mainWrapper {
