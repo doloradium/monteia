@@ -3,18 +3,14 @@ import styles from "./styles.module.css";
 import { Icon } from "../Icon/Icon";
 import Button from "../Button/Button";
 import heroImage from "../../assets/heroImage.png";
-import { useEffect } from "react";
 
 const Main = () => {
-  useEffect(() => {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
-
-    window.addEventListener("resize", () => {
-      let vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty("--vh", `${vh}px`);
-    });
-  });
+  window.onscroll = function () {
+    var scroll = document.getElementById("scroll");
+    var scrollHeight = window.scrollY;
+    var windowHeight = window.innerHeight;
+    scroll.style.opacity = 1 - (scrollHeight / windowHeight) * 2;
+  };
 
   return (
     <>
@@ -35,7 +31,7 @@ const Main = () => {
             </div>
             <img className={styles.image} src={heroImage} alt="Aroma Stick" />
           </div>
-          <div className={styles.heroScroll}>
+          <div className={styles.heroScroll} id="scroll">
             <Icon scalable={1} type={"mouse"} status={0} width={"regular"} />
             <p className={styles.scrollParagraph}>листайте ниже</p>
           </div>

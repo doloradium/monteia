@@ -2,11 +2,9 @@
   width: 100vw;
   height: 100vh;
   height: 100svh;
-  /* height: calc(var(--vh, 1vh) * 100); */
   background-color: #111111;
   position: relative;
   transition: 0.1s;
-  /* overflow: hidden; */
   margin-bottom: 10rem;
 }
 
@@ -17,7 +15,6 @@
   position: absolute;
   top: 100vh;
   top: 100svh;
-  /* top: calc(var(--vh, 1vh) * 99); */
 }
 
 .mainWrapper {
@@ -71,6 +68,14 @@
 @media screen and (max-width: 768px) {
   .image {
     display: none;
+  }
+
+  .mainBackground {
+    background-color: transparent;
+  }
+
+  .mainGradient {
+    background: transparent;
   }
 
   .mainWrapper {
