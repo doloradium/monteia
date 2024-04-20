@@ -4,8 +4,17 @@
   height: calc(var(--vh, 1vh) * 100);
   background-color: #111111;
   position: relative;
-  overflow: hidden;
-  transition: 0.2s;
+  transition: 0.1s;
+  /* overflow: hidden; */
+  margin-bottom: 10rem;
+}
+
+.mainGradient {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(#111111, #11111100);
+  position: absolute;
+  top: 100vh;
 }
 
 .mainWrapper {
