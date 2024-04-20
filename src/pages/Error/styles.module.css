@@ -1,0 +1,43 @@
+.errorContainer {
+  width: fit-content;
+  max-width: 500px;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.errorParagraph {
+  margin: 0;
+  color: #b3b3b3;
+}
+
+.errorHeading {
+  background: -webkit-linear-gradient(left, #fcf5a2, #c9a751);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  margin-bottom: -1rem;
+}
+
+.errorSubheading {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+@media screen and (max-width: 420px) {
+  .errorHeading {
+    font-size: 12vw;
+  }
+
+  .errorParagraph {
+    font-size: 4vw;
+  }
+
+  .errorSubheading {
+    font-size: 5vw;
+  }
+}

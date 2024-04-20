@@ -25,24 +25,24 @@ const Footer = () => {
         <div className={styles.footerContainer}>
           <ul className={styles.footerBlock}>
             <li className={styles.footerItem}>
-              <Link to={`/`} className={styles.footerLink}>
+              <Link to={`/settings`} className={styles.footerLink}>
                 Настройки
               </Link>
             </li>
             <li className={styles.footerItem}>
-              <Link to={`/`} className={styles.footerLink}>
+              <Link to={`/profile`} className={styles.footerLink}>
                 Профиль
               </Link>
             </li>
             <li className={styles.footerItem}>
-              <Link to={`/`} className={styles.footerLink}>
+              <Link to={`/diary`} className={styles.footerLink}>
                 Дневник
               </Link>
             </li>
           </ul>
           <ul className={styles.footerBlock}>
             <li className={styles.footerItem}>
-              <Link to={`/`} className={styles.footerLink}>
+              <Link to={`/main`} className={styles.footerLink}>
                 Главная
               </Link>
             </li>
@@ -54,12 +54,12 @@ const Footer = () => {
           </ul>
           <ul className={styles.footerBlock}>
             <li className={styles.footerItem}>
-              <Link to="#" className={styles.footerLink}>
+              <Link to={`/user-agreement`} className={styles.footerLink}>
                 Пользовательское соглашение
               </Link>
             </li>
             <li className={styles.footerItem}>
-              <Link to="#" className={styles.footerLink}>
+              <Link to={`privacy-policy`} className={styles.footerLink}>
                 Политика конфиденциальности
               </Link>
             </li>

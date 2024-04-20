@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { Icon } from "../Icon/Icon";
@@ -11,12 +11,14 @@ import styles from "./styles.module.css";
 const Main = () => {
   const navigate = useNavigate();
 
-  window.onscroll = function () {
-    var scroll = document.getElementById("scroll");
-    var scrollHeight = window.scrollY;
-    var windowHeight = window.innerHeight;
-    scroll.style.opacity = 1 - (scrollHeight / windowHeight) * 4;
-  };
+  useEffect(() => {
+    window.onscroll = function () {
+      const scroll = document.getElementById("scroll");
+      const scrollHeight = window.scrollY;
+      const windowHeight = window.innerHeight;
+      scroll.style.opacity = 1 - (scrollHeight / windowHeight) * 4;
+    };
+  });
 
   return (
     <>

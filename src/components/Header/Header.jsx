@@ -1,11 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import Button from "../Button/Button";
 
 import styles from "./styles.module.css";
 
 const Header = () => {
+  const navigate = useNavigate();
+
   return (
     <header>
       <div className={styles.headerContainer}>
@@ -14,12 +16,12 @@ const Header = () => {
         </Link>
         <ul className={styles.navbar}>
           <li className={styles.navbarItem}>
-            <Link className={styles.navbarLink} to={`/`}>
+            <Link className={styles.navbarLink} to={`/main`}>
               главная
             </Link>
           </li>
           <li className={styles.navbarItem}>
-            <Link className={styles.navbarLink} to={`/`}>
+            <Link className={styles.navbarLink} to={`/diary`}>
               дневник
             </Link>
           </li>
@@ -34,6 +36,9 @@ const Header = () => {
           className={styles.profileIcon}
           icon={"profile"}
           opacity={0}
+          onClick={() => {
+            navigate("/profile");
+          }}
         />
       </div>
     </header>

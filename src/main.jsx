@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import Index from "./pages/Index/Index.jsx";
 import Predictions from "./pages/Predictions/Predictions.jsx";
+import Error from "./pages/Error/Error.jsx";
 
 import "./index.css";
 
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <Error />,
     children: [
       {
         path: "/",
