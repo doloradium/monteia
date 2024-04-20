@@ -15,7 +15,7 @@
   background: linear-gradient(#111111, #11111100);
   position: absolute;
   top: 100vh;
-  top: calc(var(--vh, 1vh) * 100);
+  top: calc(var(--vh, 1vh) * 99);
 }
 
 .mainWrapper {
