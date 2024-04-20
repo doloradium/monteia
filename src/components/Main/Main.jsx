@@ -1,15 +1,21 @@
 import React from "react";
-import styles from "./styles.module.css";
+import { useNavigate } from "react-router-dom";
+
 import { Icon } from "../Icon/Icon";
 import Button from "../Button/Button";
+
 import heroImage from "../../assets/heroImage.png";
 
+import styles from "./styles.module.css";
+
 const Main = () => {
+  const navigate = useNavigate();
+
   window.onscroll = function () {
     var scroll = document.getElementById("scroll");
     var scrollHeight = window.scrollY;
     var windowHeight = window.innerHeight;
-    scroll.style.opacity = 1 - (scrollHeight / windowHeight) * 2;
+    scroll.style.opacity = 1 - (scrollHeight / windowHeight) * 4;
   };
 
   return (
@@ -27,6 +33,9 @@ const Main = () => {
                 icon={"arrow"}
                 size={"big"}
                 iconWidth={"wide"}
+                onClick={() => {
+                  navigate("/predictions");
+                }}
               />
             </div>
             <img className={styles.image} src={heroImage} alt="Aroma Stick" />
@@ -36,8 +45,9 @@ const Main = () => {
             <p className={styles.scrollParagraph}>листайте ниже</p>
           </div>
         </div>
-        <div className={styles.mainGradient}></div>
+        <div className={styles.heroGradient}></div>
       </div>
+      <div className={styles.mainGradient}></div>
     </>
   );
 };

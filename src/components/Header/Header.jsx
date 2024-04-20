@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header>
       <div className={styles.headerContainer}>
-        <a className={styles.logo} href="#">
+        <a className={styles.logo} href={`/`}>
           MONTEIA
         </a>
         <ul className={styles.navbar}>
@@ -22,7 +22,7 @@ const Header = () => {
             </a>
           </li>
           <li className={styles.navbarItem}>
-            <a className={styles.navbarLink} href="#">
+            <a className={styles.navbarLink} href={`/predictions`}>
               гадания
             </a>
           </li>

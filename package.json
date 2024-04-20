@@ -10,11 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@pixi/react": "^7.1.2",
     "clsx": "^2.1.0",
-    "pixi.js": "^8.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
     "swiper": "^11.1.0"
   },
   "devDependencies": {

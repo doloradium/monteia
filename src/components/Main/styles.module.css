@@ -6,6 +6,7 @@
   position: relative;
   transition: 0.1s;
   margin-bottom: 10rem;
+  overflow: hidden;
 }
 
 .mainGradient {
@@ -15,6 +16,14 @@
   position: absolute;
   top: 100vh;
   top: 100svh;
+}
+
+.heroGradient {
+  height: 25vh;
+  width: 100%;
+  background: linear-gradient(#11111100, #111111);
+  position: absolute;
+  bottom: 0;
 }
 
 .mainWrapper {
@@ -55,6 +64,7 @@
   gap: 1rem;
   position: absolute;
   bottom: 2rem;
+  z-index: 1;
 }
 
 .image {
@@ -75,6 +85,10 @@
   }
 
   .mainGradient {
+    background: transparent;
+  }
+
+  .heroGradient {
     background: transparent;
   }
 

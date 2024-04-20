@@ -1,15 +1,19 @@
-import "./App.css";
-
-import Index from "./pages/Index/Index";
-import Predictions from "./pages/Predictions/Predictions";
 import Background from "./components/Background/Background";
+import MobileNavbar from "./components/MobileNavbar/MobileNavbar";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <>
       <Background />
-      <Index />
-      {/* <Predictions /> */}
+      <div id="appContent">
+        <Header />
+        <Outlet />
+      </div>
+      <Footer />
+      <MobileNavbar />
     </>
   );
 }

@@ -1,9 +1,13 @@
 import React from "react";
 
 import Button from "../Button/Button";
+import { useNavigate } from "react-router-dom";
+
 import styles from "./styles.module.css";
 
 const MobileNavbar = () => {
+  const navigate = useNavigate();
+
   return (
     <nav>
       <div className={styles.navbarContainer}>
@@ -30,6 +34,9 @@ const MobileNavbar = () => {
           opacity={0}
           iconStatus={0}
           iconScalable={1}
+          onClick={() => {
+            navigate("/predictions");
+          }}
         />
         <Button
           iconColor={"golden"}

@@ -9,7 +9,7 @@ const Footer = () => {
         <div className={styles.footerContainer}>
           <ul className={styles.footerBlock}>
             <li className={styles.footerItem}>
-              <a className={styles.logo} href="#">
+              <a className={styles.logo} href={`/`}>
                 MONTEIA
               </a>
             </li>
@@ -46,7 +46,7 @@ const Footer = () => {
               </a>
             </li>
             <li className={styles.footerItem}>
-              <a href="#" className={styles.footerLink}>
+              <a href={`/predictions`} className={styles.footerLink}>
                 Список гаданий
               </a>
             </li>

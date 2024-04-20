@@ -3,7 +3,9 @@ footer {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 2rem;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
+  grid-row-start: 2;
+  grid-row-end: 3;
   position: relative;
 }
 
