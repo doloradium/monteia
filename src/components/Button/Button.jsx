@@ -18,6 +18,7 @@ const Button = ({
   buttonWidth,
   iconScalable,
   onClick,
+  buttonState,
 }) => {
   const [status, setStatus] = useState(iconStatus);
 
@@ -35,7 +36,8 @@ const Button = ({
           className,
           size === "big" ? styles.buttonBig : null,
           opacity === 0 ? styles.buttonTransparent : null,
-          buttonWidth === "fill" ? styles.buttonFill : null
+          buttonWidth === "fill" ? styles.buttonFill : null,
+          buttonState === false ? styles.buttonInactive : null
         )}
       >
         {content}

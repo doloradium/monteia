@@ -1,0 +1,19 @@
+.tagWrapper {
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  height: 2rem;
+  background: #11111177;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  text-wrap: nowrap;
+  margin: 0;
+}
+
+.tagActive {
+  background: linear-gradient(45deg, #fcf5a2, #c9a751);
+  border: none;
+  color: #222222;
+}

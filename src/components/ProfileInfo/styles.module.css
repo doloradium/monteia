@@ -1,0 +1,75 @@
+.profileContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1140px;
+  width: 100%;
+  padding: 0 2rem;
+  margin: auto;
+  margin-top: 10rem;
+  color: #fff;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.infoContainer {
+  grid-column: span 3;
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cardWrapper {
+  display: flex;
+  gap: 2rem;
+  height: 100%;
+}
+
+.profileSettings {
+  margin: auto 0 auto auto;
+}
+
+.profileImage {
+  grid-row: span 2;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid #2c2c2c;
+  object-fit: cover;
+  width: 100%;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.profileName {
+  margin: 0;
+}
+
+.profileDate {
+  margin: 0;
+  color: #505050;
+}
+
+.profileBlock {
+  grid-column: span 3;
+  display: flex;
+  gap: 2rem;
+  height: min-content;
+  align-items: center;
+}
+
+.profileName {
+  font-size: 1.5rem;
+}
+
+.tagContainer {
+  grid-column: span 4;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}

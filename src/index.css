@@ -3,6 +3,11 @@
   src: url("./fonts/Calypso.ttf");
 }
 
+@font-face {
+  font-family: Vinque;
+  src: url("./fonts/Vinque.otf");
+}
+
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
@@ -73,11 +78,10 @@ body {
   margin-bottom: 3rem;
   display: grid;
   grid-auto-flow: column;
-  height: 100%;
 }
 
 .swiper {
-  z-index: 0;
+  height: 100% !important;
 }
 
 @media screen and (max-width: 710px) {

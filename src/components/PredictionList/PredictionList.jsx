@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "../Card/Card";
-import cardArray from "../../data/cardArray.jsx";
 
 import styles from "./styles.module.css";
 
-const PredictionList = () => {
+const PredictionList = (cards) => {
+  const [cardList, setCardList] = useState(cards);
+
   return (
     <div className={styles.cardContainer}>
-      {cardArray.map((item) => (
+      {Object.values(cardList)[0].map((item) => (
         <Card
           key={item.id}
           id={item.id}
